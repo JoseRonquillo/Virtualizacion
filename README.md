@@ -4,7 +4,8 @@ José Antonio Ronquillo Meza
 **Hostname de la VM:** `Antonio-Ronquillo`
 ## Configuración del hostname
 
-sudo hostnamectl set-hostname tu-nombre
+sudo hostnamectl set-hostname Antonio-Ronquillo
+
 sudo reboot
 
 <img width="809" height="567" alt="image" src="https://github.com/user-attachments/assets/e7ede393-383c-40ca-8141-a81c05b47bc9" />
