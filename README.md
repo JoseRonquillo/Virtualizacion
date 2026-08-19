@@ -1,8 +1,7 @@
 # Tarea HW-03 — Modos de Red en Máquinas Virtuales
 
 José Antonio Ronquillo Meza
-**Hostname de la VM:** `tu-nombre`
-
+**Hostname de la VM:** `Antonio-Ronquillo`
 ## Configuración del hostname
 
 sudo hostnamectl set-hostname tu-nombre
