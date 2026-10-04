@@ -1,0 +1,24 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: apps-ingress
+  namespace: parcial-jarm
+spec:
+  ingressClassName: traefik
+  rules:
+  - host: app1.parcial.local
+    http:
+      paths:
+      - {path: /, pathType: Prefix, backend: {service: {name: app1, port: {number: 80}}}}
+  - host: app2.parcial.local
+    http:
+      paths:
+      - {path: /, pathType: Prefix, backend: {service: {name: app2, port: {number: 80}}}}
+  - host: app3.parcial.local
+    http:
+      paths:
+      - {path: /, pathType: Prefix, backend: {service: {name: app3, port: {number: 80}}}}
+  - host: app4.parcial.local
+    http:
+      paths:
+      - {path: /, pathType: Prefix, backend: {service: {name: app4, port: {number: 80}}}}
