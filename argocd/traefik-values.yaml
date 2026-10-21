@@ -1,0 +1,7 @@
+service:
+  type: LoadBalancer
+  externalIPs:
+    - 172.21.139.28
+ingressClass:
+  enabled: true
+  isDefaultClass: true

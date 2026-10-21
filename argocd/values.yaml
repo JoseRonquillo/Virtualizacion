@@ -1,0 +1,4 @@
+configs:
+  params:
+    # Traefik hablará HTTP con Argo CD (evita redirecciones/bucles TLS)
+    server.insecure: true

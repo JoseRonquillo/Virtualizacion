@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: app2-jarm
+  namespace: argocd-jarm
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/JoseRonquillo/Virtualizacion.git
+    targetRevision: assessment-06
+    path: apps/app2
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: parcial-jarm
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
