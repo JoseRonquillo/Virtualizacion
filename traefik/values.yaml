@@ -1,0 +1,5 @@
+ingressClass:
+  enabled: true
+  isDefaultClass: true
+service:
+  type: LoadBalancer
